@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Login</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Sign-up Page -->
+  <div id="signupPage" >
+    <h1>Smart Login System</h1>
+    <form id="signupForm">
+        <input type="text" id="usernameInput" minlength="3" required placeholder="Enter your name">
+        <input type="email" id="emailInput" required placeholder="Enter Your email">
+        <span id="emailError" style="color: red; display: none;">Email already exists!</span>
+        <input type="password" id="passwordInput" minlength="6" required placeholder="Enter password">
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="#" id="toggleSignIn">Sign In</a></p>
+    </form>
+  </div>
+
+  <!-- Sign-in Page -->
+  <div id="signinPage" style="display: none;">
+    <h1>Smart Login System</h1>
+    <form id="signinForm">
+        <input type="email" id="signinEmailInput" required placeholder="Enter Your email">
+        <input type="password" id="signinPasswordInput" minlength="6" required placeholder="Enter your password">
+      <button type="submit">Sign In</button>
+      <p>Don't have an account yet? <a href="#" id="toggleSignUp">Sign Up</a></p>
+    </form>
+  </div>
+
+  <!-- Home Page -->
+  <div id="homePage" style="display: none;">
+    <div class="navbar">
+        <h2>SMART LOGIN</h2>
+        <button id="logoutButton">Log Out</button>
+    </div>
+    <div class="printName">
+        <p id="greetingMessage">mostafa</p>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
